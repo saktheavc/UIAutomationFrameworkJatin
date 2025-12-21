@@ -1,9 +1,10 @@
 package com.ui.pages;
 
+import static com.constants.Env.QA;
+
 import org.openqa.selenium.By;
+
 import com.constants.Browser;
-import static com.constants.Env.*;
-import static com.utility.PropertiesUtil.*;
 import com.utility.BrowserUtility;
 import com.utility.JSONUtility;
 
@@ -13,8 +14,8 @@ public final class HomePage extends BrowserUtility {
 
 	public HomePage(Browser browserName) {
 		super(browserName);
-		//goToWebsite(JSONUtility.readJSON(QA));
-		goToWebsite(readProperty(QA, "URL"));
+		goToWebsite(JSONUtility.readJSON(QA).getUrl());
+		//goToWebsite(readProperty(QA, "URL"));
 		maximizeWindow();
 	}
 	
