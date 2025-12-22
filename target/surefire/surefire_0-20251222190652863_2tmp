@@ -1,0 +1,7 @@
+#surefire_0
+#Mon Dec 22 19:06:52 IST 2025
+basedir=/Users/sakthivelbaskaran/Learning/UIAutomationFrameworkJatin
+browser=chrome
+isHeadless=true
+isLambdaTest=true
+localRepository=/Users/sakthivelbaskaran/.m2/repository
